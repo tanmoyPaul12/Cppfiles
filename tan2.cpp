@@ -92,7 +92,7 @@
 // using namespace std;
 // int main()
 // {
-//     cout<<"Hellooo World";
+//     cout<<"Helloo World";
 //     return 0;
 // }
 
