@@ -84,7 +84,7 @@
 //     n=3;
 //     r=15.5;
 //     si= p*n*r/100;
-//     cout<<"the simple interest is : "<<si;
+//     cout<<"The simple interest is : "<<si;
 //     return 0;
 // }
 
@@ -92,7 +92,7 @@
 // using namespace std;
 // int main()
 // {
-//     cout<<"Helloo World";
+//     cout<<"Helloooo World";
 //     return 0;
 // }
 
