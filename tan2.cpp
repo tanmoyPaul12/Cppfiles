@@ -36,13 +36,13 @@
 //      } 
 // }
 
-// /triangle/
+// triangle
 
 // #include <iostream>
 // using namespace std;
 // int main()
 // {
-//     int a, b, c,t;
+//     int a, b, c, t;
 //     cout<<"Enter three sides of the triangle :";
 //     cin>>a;
 //     cin>>b;
@@ -60,6 +60,7 @@
 // }
  
 
+// area of a circle
 
 // #include <iostream>
 // using namespace std;
@@ -88,12 +89,34 @@
 //     return 0;
 // }
 
-// #include <iostream>
-// using namespace std;
-// int main()
-// {
-//     cout<<"Helloooo World";
-//     return 0;
-// }
 
+
+
+// chai aur code questions arithmatic operation
+
+#include <iostream>
+using namespace std;
+int main(){
+    int  cups;
+    double pricePerCup, totalPrice, discountedPrice;
+
+    cout << "Enter no.of tea cups: ";
+    cin >> cups;
+    cout << "Enter the price of per cup:";
+    cin >> pricePerCup;
+
+    totalPrice = cups * pricePerCup;
+
+    // give 5% discount if total price is above 100
+
+    if (totalPrice>100){
+        discountedPrice = totalPrice - (totalPrice * 0.05);
+        cout << "Discounted price is :" << discountedPrice << endl;
+    }else{
+        cout << "Total price is:" << totalPrice << endl;
+    }
+    
+
+    return 0;
+}
 
