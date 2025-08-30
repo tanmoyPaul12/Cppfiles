@@ -92,31 +92,68 @@
 
 
 
-// chai aur code questions arithmatic operation
+// chai aur code questions 
+// arithmatic operation
 
-#include <iostream>
-using namespace std;
-int main(){
-    int  cups;
-    double pricePerCup, totalPrice, discountedPrice;
 
-    cout << "Enter no.of tea cups: ";
-    cin >> cups;
-    cout << "Enter the price of per cup:";
-    cin >> pricePerCup;
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     int  cups;
+//     double pricePerCup, totalPrice, discountedPrice;
 
-    totalPrice = cups * pricePerCup;
+//     cout << "Enter no.of tea cups: ";
+//     cin >> cups;
+//     cout << "Enter the price of per cup:";
+//     cin >> pricePerCup;
 
-    // give 5% discount if total price is above 100
+//     totalPrice = cups * pricePerCup;
 
-    if (totalPrice>100){
-        discountedPrice = totalPrice - (totalPrice * 0.05);
-        cout << "Discounted price is :" << discountedPrice << endl;
-    }else{
-        cout << "Total price is:" << totalPrice << endl;
-    }
-    
+//     // give 5% discount if total price is above 100
 
-    return 0;
-}
+//     if (totalPrice>100){
+//         discountedPrice = totalPrice - (totalPrice * 0.05);
+//         cout << "Discounted price is :" << discountedPrice << endl;
+//     }else{
+//         cout << "Total price is:" << totalPrice << endl;
+//     }
 
+//     return 0;
+// }
+
+
+// assignment operation
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//      int teaBags;
+//      cout << "Enter number of tea bags you have:";
+//      cin >> teaBags;
+//      if (teaBags<10)
+//      {
+//         teaBags += 5;
+//     }
+//      cout << "Your total tea bags are:" << teaBags << endl;
+//      return 0;
+// }
+
+// logical operation
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//     bool isStudent;
+//     int cups;
+//     cout << "Are you a student(1 for yes 0 for no) ?" << endl;
+//     cin >> isStudent;
+//     cout << "How many cups of tea have you purchased ?";
+//     cin >> cups;
+//     if(isStudent || cups > 15){
+//         cout << "You are eligible for discount" << endl;
+//     }else{
+//         cout << "You are NOT eligible for discount" << endl;
+//     }
+//     return 0;
+// }
