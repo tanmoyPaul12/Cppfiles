@@ -157,3 +157,104 @@
 //     }
 //     return 0;
 // }
+
+// if-else operation
+
+// #include<iostream>
+// #include<string>
+// using namespace std;
+// int main(){
+//     string teaOrder;
+//     cout << "Enter your tea  order:";
+//     getline(cin,teaOrder);
+//     if(teaOrder == "Green Tea"){
+//         cout << "You have ordered Green Tea";
+//     }
+
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int hours;
+//     cout << "Enter the current Hour (0-23):";
+//     cin >> hours;
+//     if (hours>=8 && hours<=18)
+//     {
+//         cout << "We are OPEN!" <<endl;        
+//     }else{
+//         cout << "We are CLOSED!" <<endl;        
+//     }
+//     return 0;
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int cups;
+//     double pricePerCup = 2.6, discount,totalPrice;
+//     cout << "How many cups of tea you have ordered ?" << endl;
+//     cin >> cups;
+
+//     totalPrice = cups * pricePerCup;
+
+//     if(cups>20){
+//         discount = 0.20;
+//         cout << "Applied 20% discount\n";
+//     }else if(cups>=10 && cups<=20){
+//         discount = 0.10;
+//         cout << "Applied 10% discount\n";
+//     }else{
+//         discount = 0;
+//         cout << "Sorry no discount\n";
+//     }
+
+//     totalPrice -= (totalPrice * discount);
+//     if(cups>=10){
+//         cout <<"Total Price after discount is:" << totalPrice << endl; 
+//     }else{
+//         cout <<"Total Price is:" << totalPrice << endl;
+//     }
+    
+//     return 0;
+// }
+
+// switch case
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//    int choice;
+//    double price;
+//     cout <<"Select your tea\n";
+//     cout <<"1.Green Tea\n";
+//     cout <<"1.Black Tea\n";
+//     cout <<"1.Oolong Tea\n";
+//     cout << "Enter your choice in number:";
+
+//     cin >> choice;
+//     switch(choice){
+//         case 1:
+//             price = 2.5;
+//             cout <<"You selected Green Tea. Price:"<< price << endl;
+//             break;
+//         case 2:
+//             price = 4.5;
+//             cout <<"You selected Black Tea. Price:"<< price << endl;
+//             break;
+//         case 3:
+//             price = 7.5;
+//             cout <<"You selected Oolong Tea. Price:"<< price << endl;
+//             break;
+//         default:
+//             cout << "Invalid choice" << endl;
+//     }
+//     return 0;
+// }
+
+
+// loops
+
