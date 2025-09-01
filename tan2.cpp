@@ -258,3 +258,75 @@
 
 // loops
 
+// #include<iostream>
+// #include<string>
+
+// using namespace std;
+
+// int main(){
+//     int teaCups;
+//     cout<<"Enter the number of tea cups to serve:";
+//     cin>>teaCups;
+
+//     while (teaCups>0)
+//     {
+//         teaCups--;
+//         cout<<"Serving a cup of tea\n"<<"Remaining "<<teaCups<<endl;
+//     }
+//     cout<<"All tea cups are served"<<endl;
+
+//     return 0;
+// }
+
+
+// #include<iostream>
+// #include<string>
+
+// using namespace std;
+
+// int main(){
+//     string response;
+//     do
+//     {
+//         cout<<"Do you want more tea (yes/no):"<<endl;
+//         cin>> response;
+//     } while (response !="no" && response!="No");
+//     return 0;
+// }
+
+// #include<iostream>
+// #include<string>
+
+// using namespace std;
+
+// int main(){
+//     int teaCups = 5;
+//     for (int i = 1; i <= teaCups; i++)
+//     {
+//         cout << "Brewing "<<i<<" cup of tea.."<< endl ;
+//     }
+//         cout<<"All brewed loop ended";
+//     return 0;
+// }
+
+#include<iostream>
+#include<string>
+
+using namespace std;
+
+int main(){
+    string response;
+
+    while (true)
+    {
+        cout<<"Do you want more tea (type 'stop' to exit)?:";
+        getline(cin,response);
+        
+        if(response=="stop"){
+            break;
+        }
+        cout<<"Here is your another cup of tea\n"<<endl;
+    }    
+    cout<<"No more tea will be served";
+    return 0;
+}
