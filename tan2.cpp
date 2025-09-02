@@ -336,6 +336,56 @@
 
 // Functions
 
+// arrays
+
+
 
 // Oops
 
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+// class name always starts with capital letter =>Chai || object with small letter
+
+class Chai{
+    // data members (attributes)
+    public:
+            string teaName;
+            int serving;
+            vector<string> ingredients;
+
+            // Member function
+            void displayChaiDetails(){
+                cout << "Tea Name:"<< teaName << endl;
+                cout << "Servings:"<< serving << endl;
+                cout << "Ingredients:";
+                for(string ingredent:ingredients){
+                    cout << ingredent <<" ";
+                }
+                cout<<endl;
+            }
+
+};
+
+
+int main(){
+    Chai chaiOne; //object made
+
+    chaiOne.teaName = "Black Tea";
+    chaiOne.serving = 2;
+    chaiOne.ingredients = {"Water", "Tea", "sugar", "Honey"};
+    
+    chaiOne.displayChaiDetails();
+    
+    //another object
+
+    Chai chaiTwo; 
+    chaiTwo.teaName="Masala Chai";
+    chaiTwo.serving=5;
+    chaiTwo.ingredients={"Water", "Tea", "sugar","Ginger","Masala"};
+    chaiTwo.displayChaiDetails();
+
+    return 0;
+}
