@@ -13,27 +13,27 @@
 // int main()
 // {
 //     int a, b, c;
-//     cout<<"Enter 1st no."; 
+//     cout<<"Enter 1st no.";
 //     cin>>a;
-//     cout<<"Enter 2nd no."; 
+//     cout<<"Enter 2nd no.";
 //     cin>>b;
-//     cout<<"Enter 3rd no."; 
+//     cout<<"Enter 3rd no.";
 //     cin>>c;
 //     if(a>b && b>c)
 //     {
 //     cout<<"The largest no. is "<<a;
-    
+
 //     }
 //     else if(b>a && b>c)
 //     {
 //      cout<<"The largest no. is "<<b;
-    
+
 //     }
-//      else 
+//      else
 //      {
 //         cout<<"The largest no. is "<<c;
-        
-//      } 
+
+//      }
 // }
 
 // triangle
@@ -58,7 +58,6 @@
 //         cout<<"/n it is not a valid triangle";
 //     }
 // }
- 
 
 // area of a circle
 
@@ -69,7 +68,7 @@
 //     float r=5.0, pi=3.14159;
 //     // int area=pi*r*r;
 //     float area=pi*r*r;
-//     cout<<"The area of the circle is : "<<area;    
+//     cout<<"The area of the circle is : "<<area;
 //     return 0;
 // }
 
@@ -92,9 +91,9 @@
 
 
 
-// chai aur code questions 
-// arithmatic operation
 
+// chai aur code questions
+// arithmatic operation
 
 // #include <iostream>
 // using namespace std;
@@ -125,6 +124,7 @@
 // assignment operation
 
 
+
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -139,7 +139,11 @@
 //      return 0;
 // }
 
+
 // logical operation
+
+
+
 
 // #include <iostream>
 // using namespace std;
@@ -158,7 +162,10 @@
 //     return 0;
 // }
 
+
+
 // if-else operation
+
 
 // #include<iostream>
 // #include<string>
@@ -175,6 +182,7 @@
 // }
 
 
+
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -183,12 +191,13 @@
 //     cin >> hours;
 //     if (hours>=8 && hours<=18)
 //     {
-//         cout << "We are OPEN!" <<endl;        
+//         cout << "We are OPEN!" <<endl;
 //     }else{
-//         cout << "We are CLOSED!" <<endl;        
+//         cout << "We are CLOSED!" <<endl;
 //     }
 //     return 0;
 // }
+
 
 
 // #include<iostream>
@@ -214,15 +223,18 @@
 
 //     totalPrice -= (totalPrice * discount);
 //     if(cups>=10){
-//         cout <<"Total Price after discount is:" << totalPrice << endl; 
+//         cout <<"Total Price after discount is:" << totalPrice << endl;
 //     }else{
 //         cout <<"Total Price is:" << totalPrice << endl;
 //     }
-    
+
 //     return 0;
 // }
 
+
 // switch case
+
+
 
 // #include<iostream>
 // using namespace std;
@@ -256,7 +268,10 @@
 // }
 
 
+
 // loops
+
+
 
 // #include<iostream>
 // #include<string>
@@ -279,6 +294,7 @@
 // }
 
 
+
 // #include<iostream>
 // #include<string>
 
@@ -293,6 +309,8 @@
 //     } while (response !="no" && response!="No");
 //     return 0;
 // }
+
+
 
 // #include<iostream>
 // #include<string>
@@ -309,6 +327,8 @@
 //     return 0;
 // }
 
+
+
 // #include<iostream>
 // #include<string>
 
@@ -321,71 +341,201 @@
 //     {
 //         cout<<"Do you want more tea (type 'stop' to exit)?:";
 //         getline(cin,response);
-        
+
 //         if(response=="stop"){
 //             break;
 //         }
 //         cout<<"Here is your another cup of tea\n"<<endl;
-//     }    
+//     }
 //     cout<<"No more tea will be served";
+//     return 0;
+// }
+
+// Functions
+
+
+
+// arrays
+
+
+
+
+
+
+
+// Oops
+
+
+
+// #include <iostream>
+// using namespace std;
+
+// class Person {
+// public:
+//     string name = "Tanmoy";
+
+//     void sayHello() {   // Method (member function)
+//         cout << "Hello, my name is " << name << endl;
+//     }
+// };
+
+// int main() {
+//     Person p;
+//     p.name = "Rahul";
+//     p.sayHello();  // calling the method
 //     return 0;
 // }
 
 
 
 
-// Functions
+// #include <iostream>
+// #include <vector>
 
-// arrays
+// using namespace std;
+
+// // class name always starts with capital letter =>(C)hai || object with small letter
+
+// class Chai{
+//     // data members (attributes)
+//     public:
+//             string teaName;
+//             int serving;
+//             vector<string> ingredients;
+
+//             // Member function
+//             void displayChaiDetails(){
+//                 cout << "Tea Name:"<< teaName << endl;
+//                 cout << "Servings:"<< serving << endl;
+//                 cout << "Ingredients:";
+//                 for(string ingredent:ingredients){
+//                     cout << ingredent <<" ";
+//                 }
+//                 cout<<endl;
+//             }
+
+// };
+
+// int main(){
+//     Chai chaiOne; //object made first class name then obj
+
+//     chaiOne.teaName = "Black Tea";
+//     chaiOne.serving = 2;
+//     chaiOne.ingredients = {"Water", "Tea", "sugar", "Honey"};
+
+//     chaiOne.displayChaiDetails();
+
+//     //another object
+
+//     Chai chaiTwo;
+//     chaiTwo.teaName="Masala Chai";
+//     chaiTwo.serving=5;
+//     chaiTwo.ingredients={"Water", "Tea", "sugar","Ginger","Masala"};
+//     chaiTwo.displayChaiDetails();
+//     return 0;
+// }
+
+// Constructor, destructor and Copy Constructor
+
+// #include<iostream>
+// #include<vector>
+
+// using namespace std;
+
+// class Chai{
+
+// };
+
+// int main(){
+
+//     return 0;
+// }
 
 
 
-// Oops
+
+// Getter Setter
+
+
 
 #include <iostream>
 #include <vector>
 
 using namespace std;
 
-// class name always starts with capital letter =>Chai || object with small letter
+class Chai
+{
+private:
+    string teaName;
+    int serving;
+    vector<string> ingredients;
 
-class Chai{
-    // data members (attributes)
-    public:
-            string teaName;
-            int serving;
-            vector<string> ingredients;
+public:
+    Chai()
+    {
+        teaName = "unknown";
+        serving = 3;
+        ingredients = {"water", "tea leaves"};
+    }
 
-            // Member function
-            void displayChaiDetails(){
-                cout << "Tea Name:"<< teaName << endl;
-                cout << "Servings:"<< serving << endl;
-                cout << "Ingredients:";
-                for(string ingredent:ingredients){
-                    cout << ingredent <<" ";
-                }
-                cout<<endl;
-            }
+    Chai(string name, int ser, vector<string> ingr)
+    {
+        teaName = name;
+        serving = ser;
+        ingredients = ingr;
+    }
 
+    // getter teaname
+    string getTeaName()
+    {
+        return teaName;
+    }
+    // setter teaname
+    void setTeaName(string name)
+    {
+        // any logic we can apply with (name)
+        teaName = name;
+    }
+
+    // getter serving
+    int getServing()
+    {
+        return serving;
+    }
+    // setter serving
+    void setServing(int ser)
+    {
+        // serving = ser + 2; we can write here like this
+        serving = ser;
+    }
+
+    // getter for ingredients
+    vector<string> getIngredients()
+    {
+        return ingredients;
+    }
+    // setter for ingredients
+    void setIngredients(vector<string> ing)
+    {
+        ingredients = ing;
+    }
+
+    void displayChaiDetails()
+    {
+        cout << "Tea Name:" << teaName << endl;
+        cout << "Servings:" << serving << endl;
+        cout << "Ingredients:";
+        for (string ingredent : ingredients)
+        {
+            cout << ingredent << " ";
+        }
+        cout << endl;
+    }
 };
 
-
-int main(){
-    Chai chaiOne; //object made
-
-    chaiOne.teaName = "Black Tea";
-    chaiOne.serving = 2;
-    chaiOne.ingredients = {"Water", "Tea", "sugar", "Honey"};
-    
-    chaiOne.displayChaiDetails();
-    
-    //another object
-
-    Chai chaiTwo; 
-    chaiTwo.teaName="Masala Chai";
-    chaiTwo.serving=5;
-    chaiTwo.ingredients={"Water", "Tea", "sugar","Ginger","Masala"};
-    chaiTwo.displayChaiDetails();
+int main()
+{
+    Chai chai; // object made
 
     return 0;
 }
