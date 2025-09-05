@@ -485,6 +485,7 @@ public:
         ingredients = ingr;
     }
 
+
     // getter teaname
     string getTeaName()
     {
@@ -497,6 +498,7 @@ public:
         teaName = name;
     }
 
+
     // getter serving
     int getServing()
     {
@@ -505,9 +507,10 @@ public:
     // setter serving
     void setServing(int ser)
     {
-        // serving = ser + 2; we can write here like this
-        serving = ser;
+        serving = ser + 2; //we can write here like this
+        // serving = ser;
     }
+
 
     // getter for ingredients
     vector<string> getIngredients()
@@ -520,6 +523,7 @@ public:
         ingredients = ing;
     }
 
+    
     void displayChaiDetails()
     {
         cout << "Tea Name:" << teaName << endl;
@@ -537,5 +541,22 @@ int main()
 {
     Chai chai; // object made
 
+   // chai.teaName = "masala tea";  // cant access like this due to private getset required
+    // chai.serving = 7; not possible like this
+
+
+    chai.setTeaName("masala tea");
+    // cout << chai.getTeaName(); //getter to access the setter
+
+    chai.setServing(7);
+
+    chai.setIngredients({"water","tea leaves", "sugar", "ginger"});
+
+    chai.displayChaiDetails();
+
     return 0;
 }
+
+
+
+
