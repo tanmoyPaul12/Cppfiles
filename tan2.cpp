@@ -458,105 +458,157 @@
 
 
 
-#include <iostream>
-#include <vector>
+// #include <iostream>
+// #include <vector>
+
+// using namespace std;
+
+// class Chai
+// {
+// private:
+//     string teaName;
+//     int serving;
+//     vector<string> ingredients;
+
+// public:
+            //default constructor
+
+//     Chai()               
+//     {
+//         teaName = "unknown";
+//         serving = 3;
+//         ingredients = {"water", "tea leaves"};
+//     }
+
+            //parameterized
+
+//     Chai(string name, int ser, vector<string> ingr)
+//     {
+//         teaName = name;
+//         serving = ser;
+//         ingredients = ingr;
+//     }
+
+
+//     // getter teaname
+//     string getTeaName()
+//     {
+//         return teaName;
+//     }
+//     // setter teaname
+//     void setTeaName(string name)
+//     {
+//         // any logic we can apply with (name)
+//         teaName = name;
+//     }
+
+
+//     // getter serving
+//     int getServing()
+//     {
+//         return serving;
+//     }
+//     // setter serving
+//     void setServing(int ser)
+//     {
+//         serving = ser + 2; //we can write here like this
+//         // serving = ser;
+//     }
+
+
+//     // getter for ingredients
+//     vector<string> getIngredients()
+//     {
+//         return ingredients;
+//     }
+//     // setter for ingredients
+//     void setIngredients(vector<string> ing)
+//     {
+//         ingredients = ing;
+//     }
+
+    
+//     void displayChaiDetails()
+//     {
+//         cout << "Tea Name:" << teaName << endl;
+//         cout << "Servings:" << serving << endl;
+//         cout << "Ingredients:";
+//         for (string ingredent : ingredients)
+//         {
+//             cout << ingredent << " ";
+//         }
+//         cout << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Chai chai; // object made
+
+//    // chai.teaName = "masala tea";  // cant access like this due to private getset required
+//     // chai.serving = 7; not possible like this
+
+
+//     chai.setTeaName("masala tea");
+//     // cout << chai.getTeaName(); //getter to access the setter
+
+//     chai.setServing(7);
+
+//     chai.setIngredients({"water","tea leaves", "sugar", "ginger"});
+
+//     chai.displayChaiDetails();
+
+//     return 0;
+// }
+
+
+//delegating constructor
+
+#include<iostream>
+#include<vector>
 
 using namespace std;
 
-class Chai
-{
-private:
-    string teaName;
-    int serving;
-    vector<string> ingredients;
-
-public:
-    Chai()
-    {
-        teaName = "unknown";
-        serving = 3;
-        ingredients = {"water", "tea leaves"};
-    }
-
-    Chai(string name, int ser, vector<string> ingr)
-    {
-        teaName = name;
-        serving = ser;
-        ingredients = ingr;
-    }
+class Chai{
+    public:
+        string teaName;
+        int servings;
+        vector<string> ingredients;
 
 
-    // getter teaname
-    string getTeaName()
-    {
-        return teaName;
-    }
-    // setter teaname
-    void setTeaName(string name)
-    {
-        // any logic we can apply with (name)
-        teaName = name;
-    }
+        //deligating constructor used if parameterized is used with normal constructor no need
 
+        Chai(string name): Chai(name, 2, {"water", "tealeaves", "sugar"}){}
 
-    // getter serving
-    int getServing()
-    {
-        return serving;
-    }
-    // setter serving
-    void setServing(int ser)
-    {
-        serving = ser + 2; //we can write here like this
-        // serving = ser;
-    }
+        //main constructor parameterized 
 
-
-    // getter for ingredients
-    vector<string> getIngredients()
-    {
-        return ingredients;
-    }
-    // setter for ingredients
-    void setIngredients(vector<string> ing)
-    {
-        ingredients = ing;
-    }
-
-    
-    void displayChaiDetails()
-    {
-        cout << "Tea Name:" << teaName << endl;
-        cout << "Servings:" << serving << endl;
-        cout << "Ingredients:";
-        for (string ingredent : ingredients)
-        {
-            cout << ingredent << " ";
+        Chai(string name, int serve, vector<string> ingr){
+            teaName = name;
+            servings = serve;
+            ingredients = ingr;
         }
-        cout << endl;
-    }
+
+        void displayChaiDetails(){
+            cout << "Tea Name:" << teaName << endl;
+            cout << "Servings:" << servings << endl;
+            cout << "Ingredients:";
+            for (string ingredent : ingredients)
+                {
+                    cout << ingredent << " ";
+                }
+            cout << endl;
+        }
+
+
+
 };
 
-int main()
-{
-    Chai chai; // object made
 
-   // chai.teaName = "masala tea";  // cant access like this due to private getset required
-    // chai.serving = 7; not possible like this
+int main(){
+    Chai quickChai("Quick chai");
+    quickChai.displayChaiDetails();
 
 
-    chai.setTeaName("masala tea");
-    // cout << chai.getTeaName(); //getter to access the setter
-
-    chai.setServing(7);
-
-    chai.setIngredients({"water","tea leaves", "sugar", "ginger"});
-
-    chai.displayChaiDetails();
 
     return 0;
 }
-
-
-
-
