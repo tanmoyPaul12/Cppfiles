@@ -628,36 +628,54 @@
 
 
 
-#include<iostream>
-#include<vector>
+// #include<iostream>
+// #include<vector>
 
-using namespace std;
+// using namespace std;
 
-class Chai{
-    private:
-        string teaName;
-        int servings;
+// class Chai{
+//     private:
+//         string teaName;
+//         int servings;
     
-    public:
-        Chai(string name, int serve): teaName(name), servings(serve){}
-        // Chai(string name, int serve){
-        //     teaName = name;
-        //     servings = serve;
-        // }
-                        // both are parameterized constructor
+//     public:
+//         Chai(string name, int serve): teaName(name), servings(serve){}
 
+//         // Chai(string name, int serve){
+//         //     teaName = name;
+//         //     servings = serve;
+//         // }
+//                         // both are parameterized constructor
+
+
+//         friend bool compareServings(const Chai &chai1, const Chai &chai2);
         
-            void display() const {
-                cout <<"teaname:" << teaName << endl;
-            }
+//             void display() const {
+//                 cout <<"teaname:" << teaName << endl;
+//                 cout <<"Servings:" << servings << endl;
+//             }
 
 
-};
+// };
 
-int main(){
-    Chai masalaChai("masala chai", 4);
-    Chai gingerChai("ginger chai", 4);
+// bool compareServings(const Chai &chai1, const Chai &chai2){
+//     return chai1.servings > chai2.servings;
+// }
+ 
+// int main(){
+//     Chai masalaChai("masala chai", 14);
+//     Chai gingerChai("ginger chai", 19);
+    
+//     masalaChai.display();
+//     gingerChai.display();
 
+//     if (compareServings(masalaChai, gingerChai))
+//     {
+//         cout << "Masala chai is having MORE servings";
+//     }else{
+//         cout << "Ginger chai is having MORE servings";
+//     }
+    
 
-    return 0;
-} 
+//     return 0;
+// } 
