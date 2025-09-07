@@ -92,8 +92,8 @@
 
 
 
-// chai aur code questions
-// arithmatic operation
+                                        // chai aur code questions
+                                        // arithmatic operation
 
 // #include <iostream>
 // using namespace std;
@@ -121,7 +121,7 @@
 // }
 
 
-// assignment operation
+                                        // assignment operation
 
 
 
@@ -140,7 +140,7 @@
 // }
 
 
-// logical operation
+                                        // logical operation
 
 
 
@@ -164,7 +164,7 @@
 
 
 
-// if-else operation
+                                        // if-else operation
 
 
 // #include<iostream>
@@ -232,7 +232,7 @@
 // }
 
 
-// switch case
+                                                // switch case
 
 
 
@@ -269,7 +269,7 @@
 
 
 
-// loops
+                                                        // loops
 
 
 
@@ -351,11 +351,11 @@
 //     return 0;
 // }
 
-// Functions
+                                        // Functions
 
 
 
-// arrays
+                                        // arrays
 
 
 
@@ -363,7 +363,7 @@
 
 
 
-// Oops
+                                             // Oops
 
 
 
@@ -435,7 +435,10 @@
 //     return 0;
 // }
 
-// Constructor, destructor and Copy Constructor
+
+
+                            // Constructor, destructor and Copy Constructor
+
 
 // #include<iostream>
 // #include<vector>
@@ -454,7 +457,7 @@
 
 
 
-// Getter Setter
+                                        // Getter Setter
 
 
 
@@ -471,7 +474,7 @@
 //     vector<string> ingredients;
 
 // public:
-            //default constructor
+//             //default constructor
 
 //     Chai()               
 //     {
@@ -480,22 +483,22 @@
 //         ingredients = {"water", "tea leaves"};
 //     }
 
-            //parameterized
+//            // parameterized constructor  in int main used  with default constructor 
 
-//     Chai(string name, int ser, vector<string> ingr)
-//     {
-//         teaName = name;
-//         serving = ser;
-//         ingredients = ingr;
-//     }
+//     // Chai(string name, int ser, vector<string> ingr)
+//     // {
+//     //     teaName = name;
+//     //     serving = ser;
+//     //     ingredients = ingr;
+//     // }
 
 
-//     // getter teaname
+//          //getter teaname
 //     string getTeaName()
 //     {
 //         return teaName;
 //     }
-//     // setter teaname
+//         // setter teaname
 //     void setTeaName(string name)
 //     {
 //         // any logic we can apply with (name)
@@ -503,12 +506,12 @@
 //     }
 
 
-//     // getter serving
+//         //getter serving
 //     int getServing()
 //     {
 //         return serving;
 //     }
-//     // setter serving
+//         // setter serving
 //     void setServing(int ser)
 //     {
 //         serving = ser + 2; //we can write here like this
@@ -543,9 +546,10 @@
 
 // int main()
 // {
-//     Chai chai; // object made
+//     // Chai chai("Ginger", 2, {"water"}); // object made for parameterized
+//     Chai chai; // object made for default
 
-//    // chai.teaName = "masala tea";  // cant access like this due to private getset required
+//     //chai.teaName = "masala tea";  // cant access like this due to private getset required
 //     // chai.serving = 7; not possible like this
 
 
@@ -561,8 +565,68 @@
 //     return 0;
 // }
 
+                // ok so default constructor cant access  but parameterized can access and for normal to access we need getter setter   
 
-//delegating constructor
+
+                // if i write default constructor then 2nd one and for parameterized 1st one bcz parameterized can access without getset default also can but not like chai.teaName = "masala tea";
+
+
+                
+
+                                                //delegating constructor
+
+// #include<iostream>
+// #include<vector>
+
+// using namespace std;
+
+// class Chai{
+//     public:
+//         string teaName;
+//         int servings;
+//         vector<string> ingredients;
+
+
+//         //deligating constructor used if parameterized is used with normal constructor no need
+
+//         Chai(string name): Chai(name, 2, {"water", "tealeaves", "sugar"}){}
+
+//         //main constructor parameterized 
+
+//         Chai(string name, int serve, vector<string> ingr){
+//             teaName = name;
+//             servings = serve;
+//             ingredients = ingr;
+//         }
+
+//         void displayChaiDetails(){
+//             cout << "Tea Name:" << teaName << endl;
+//             cout << "Servings:" << servings << endl;
+//             cout << "Ingredients:";
+//             for (string ingredent : ingredients)
+//                 {
+//                     cout << ingredent << " ";
+//                 }
+//             cout << endl;
+//         }
+
+
+
+// };
+
+
+// int main(){
+//     Chai quickChai("Quick chai");
+//     quickChai.displayChaiDetails();
+
+
+//     return 0;
+// }
+
+
+                                            // Friend functions
+
+
 
 #include<iostream>
 #include<vector>
@@ -570,45 +634,30 @@
 using namespace std;
 
 class Chai{
-    public:
+    private:
         string teaName;
         int servings;
-        vector<string> ingredients;
+    
+    public:
+        Chai(string name, int serve): teaName(name), servings(serve){}
+        // Chai(string name, int serve){
+        //     teaName = name;
+        //     servings = serve;
+        // }
+                        // both are parameterized constructor
 
-
-        //deligating constructor used if parameterized is used with normal constructor no need
-
-        Chai(string name): Chai(name, 2, {"water", "tealeaves", "sugar"}){}
-
-        //main constructor parameterized 
-
-        Chai(string name, int serve, vector<string> ingr){
-            teaName = name;
-            servings = serve;
-            ingredients = ingr;
-        }
-
-        void displayChaiDetails(){
-            cout << "Tea Name:" << teaName << endl;
-            cout << "Servings:" << servings << endl;
-            cout << "Ingredients:";
-            for (string ingredent : ingredients)
-                {
-                    cout << ingredent << " ";
-                }
-            cout << endl;
-        }
-
+        
+            void display() const {
+                cout <<"teaname:" << teaName << endl;
+            }
 
 
 };
 
-
 int main(){
-    Chai quickChai("Quick chai");
-    quickChai.displayChaiDetails();
-
+    Chai masalaChai("masala chai", 4);
+    Chai gingerChai("ginger chai", 4);
 
 
     return 0;
-}
+} 
