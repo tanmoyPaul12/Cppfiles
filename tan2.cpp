@@ -816,21 +816,64 @@
 
 
 
-                                    // Abstract Class
+                                    // Abstract Class , derived class and virtual function
+ 
 
 
 // #include<iostream>
+// #include<string>
 
 // using namespace std;
 
+// class Tea{
+//     public:
+//        virtual void prepareIngredients() = 0; //virtual function
+//        virtual void brew() = 0;
+//        virtual void serve() = 0;
+
+//        void makeTea(){
+//         prepareIngredients();
+//         brew();
+//         serve();
+//        }
+//     };
 
 
-
-
+//         //derived class
+// class GreenTea: public Tea{
+// public:
+//     void prepareIngredients() override{
+//         cout<<"Green leaves water sugar is ready"<<endl;
+//     }
+//     void brew() override{
+//         cout<<"Green Tea Brewed"<<endl;
+//     }
+//     void serve() override{
+//         cout<<"Green Tea Tea served"<<endl;
+//     }
+// };
+//          // i can make as many diff derived class as i want 
+// class MasalaTea: public Tea{
+// public:
+//     void prepareIngredients() override{
+//         cout<<"Tea leaves water sugar is ready"<<endl;
+//     }
+//     void brew() override{
+//         cout<<"Masala Tea Brewed"<<endl;
+//     }
+//     void serve() override{
+//         cout<<"Masala Tea Tea served"<<endl;
+//     }
+// };
 
 
 // int main(){
 
+//     GreenTea grenTea;
+//     MasalaTea masTea;
 
+//     grenTea.makeTea();
+//      // makeTea method derived cls a banani hoise na still avaliable ase bcz agr 3 ta method implement hoile maketea o avaliable hoibo bcz maketea a internally oi 3 ta method re oi call kore
+//      masTea.makeTea();
 //     return 0;
 // }
