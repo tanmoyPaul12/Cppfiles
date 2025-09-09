@@ -679,3 +679,158 @@
 
 //     return 0;
 // } 
+
+
+
+                                // Encapsulation
+
+
+// #include<iostream>
+
+// using namespace std;
+
+// class BankAccount{
+//     private:
+//         string accountNumber;
+//         double balance;
+    
+//     public:
+//         BankAccount(string acc, double initBal){
+//             accountNumber = acc;
+//             balance = initBal;
+//         }
+
+//             // getter 
+        
+//         double getBalance() const {
+//             return balance;
+//         }
+//             // setter
+        
+//         // void setBalance(double inbal){
+//         //     balance = inbal;
+//         // }     //no setter else anyone Can update balance
+
+//             // method to deposit money
+
+//         void deposit(double amount){
+//             if(amount > 0){
+//                 balance += amount;
+//                 cout<<"Deposited amount:" << amount <<endl;   
+//             }else{
+//                 cout<<"Invalid deposited amount"<< amount << endl;
+//             }
+//         }
+//          //balance lekhle balance expose hoijaibo so  amount oi display krmu r setBalance nai so balance dekte prto na
+         
+//             // withdraw method
+        
+//         void withdraw(double amount){
+//             if(amount > 0 && amount <= balance){
+//                 balance -= amount;
+//                 cout << "Withdraw successful:" <<amount<< endl;
+//             }else{
+//                 cout << "Insufficient Balance:" <<amount<< endl;
+//             }
+//         }
+
+// };
+
+
+// int main(){
+//     BankAccount myAccount("122342467" , 5000);
+//     myAccount.getBalance(); // na lekhle o prblm nai bcz update ba show to krtm na 
+//     myAccount.deposit(400);
+
+//     return 0;
+
+// }
+
+       // So basically in this ex just cleared few confusion regarding getter how to show and when to show or hide
+
+// #include<iostream>
+
+// using namespace std;
+
+// class BankAccount{
+//     private:
+//         string accountNumber;
+//         double balance;
+    
+//     public:
+//         BankAccount(string acc, double initBal){
+//             accountNumber = acc;
+//             balance = initBal;
+//         }
+
+//             // getter 
+        
+//         double getBalance() const {
+//             return balance;
+//         }
+//             // setter
+        
+//         // void setBalance(double inbal){
+//         //     balance = inbal;
+//         // }     //no setter else anyone Can update balance
+
+//             // method to deposit money
+
+//         void deposit(double amount){
+//             if(amount > 0){
+//                 balance += amount;
+//                 cout<<"Deposited amount:" << amount <<endl;   
+//             }else{
+//                 cout<<"Invalid deposited amount"<< amount << endl;
+//             }
+//         }
+//          //balance lekhle balance expose hoijaibo so  amount oi display krmu r setBalance nai so balance dekte prto na
+         
+//             // withdraw method
+        
+//         void withdraw(double amount){
+//             if(amount > 0 && amount <= balance){
+//                 balance -= amount;
+//                 cout << "Withdraw successful:" <<amount<< endl;
+//             }else{
+//                 cout << "Insufficient Balance:" <<amount<< endl;
+//             }
+//         }
+
+// };
+
+
+// int main(){
+//     BankAccount myAccount("122342467" , 5000);
+//     // myAccount.getBalance(); // na lekhle o prblm nai bcz update ba show toh krtm na 
+//     cout<<"Initial balance:"<< myAccount.getBalance()<<endl;
+//     myAccount.deposit(400);
+//     cout<<"After deposit:"<< myAccount.getBalance()<<endl;
+//     myAccount.withdraw(100);
+//     cout<<"After withdraw:"<< myAccount.getBalance()<<endl;
+
+//     return 0;
+
+// }
+
+
+
+
+                                    // Abstract Class
+
+
+// #include<iostream>
+
+// using namespace std;
+
+
+
+
+
+
+
+// int main(){
+
+
+//     return 0;
+// }
