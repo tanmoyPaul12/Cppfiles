@@ -877,3 +877,106 @@
 //      masTea.makeTea();
 //     return 0;
 // }
+
+
+
+                    //    practice practice
+
+// #include<iostream>
+// #include<string>
+// #include<vector>
+
+// using namespace std;
+
+        
+// class Tea{
+// private:
+//     int cups;
+//     string teaName;
+
+// public:
+//     Tea(int c, string n){
+//         cups = c;
+//         teaName = n;
+//     }  
+
+//     string getTeaname(){
+//         return teaName;
+//     }
+
+
+//     // void display(){
+//     //     cout<<"Tea cups are:"<<cups<<endl;
+//     //     cout<<"Tea name is:"<<teaName<<endl;
+//     // }
+
+
+// };
+
+
+
+// int main(){
+//     Tea chai(6,"Masala Chai");
+//     cout<<"Teaname is:"<<chai.getTeaname()<<endl;
+
+//     return 0;
+// }
+               
+
+// #include<iostream>
+// #include<string>
+// #include<vector>
+
+// using namespace std;
+
+        
+// class Tea{
+// private:
+//     int cups;
+//     string teaName;
+
+// public:
+//     Tea(){
+//         cups = 5;
+//         teaName = "Green Tea";
+//     }  
+
+    
+
+
+//     void display(){
+//         cout<<"Tea cups are:"<<cups<<endl;
+//         cout<<"Tea name is:"<<teaName<<endl;
+//     }
+
+
+// };
+
+// int main(){
+//     Tea chai;
+//     // chai.teaName = "Masala Tea"; //not possible without friend or getter
+//     chai.display(); 
+
+//     return 0;
+ 
+// }
+
+
+
+                // inheritance final keyword
+
+#include<iostream>
+#include<string>
+#include<vector>
+
+using namespace std;
+
+// base class
+
+class Tea{
+protected:
+    
+
+
+
+};
