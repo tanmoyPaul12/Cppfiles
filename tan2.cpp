@@ -645,7 +645,7 @@
 //         //     teaName = name;
 //         //     servings = serve;
 //         // }
-//                         // both are parameterized constructor
+//                         // both are parameterized constructor just different ways
 
 
 //         friend bool compareServings(const Chai &chai1, const Chai &chai2);
@@ -963,20 +963,111 @@
 
 
 
-                // inheritance final keyword
+                // inheritance  , final keyword
 
-#include<iostream>
-#include<string>
-#include<vector>
+// #include<iostream>
+// #include<string>
+// #include<vector>
 
-using namespace std;
+// using namespace std;
 
-// base class
+// // base/main/parent/original class 
 
-class Tea{
-protected:
-    
+// class Tea{
+// protected:
+//     string teaName;
+//     int servings;
+// public:
+//     Tea(string name, int serve): teaName(name) , servings(serve){
+//         cout<<"Tea constructor called " << teaName << endl;
+//     }   
+//                 // override krsi brew so eta print hoito na
+//      virtual void brew() const {
+//         cout<<"Brewing"<< teaName <<"with generic method"<<endl;
+//      }
+//      virtual void serve() const {
+//         cout<<"Serving"<< servings <<" cup of tea with generic method"<<endl;
+//      }
+//      // virtual destructor
+//      virtual ~Tea(){
+//         cout<<"Destructor called"<<teaName<<endl;
+//      }
+
+// };
+
+
+// class GreenTea: public Tea{
+//     public:
+//                     //constructor deligating
+//         GreenTea(int serve):Tea("Green Tea",serve){
+//             cout << "Green Tea deligating constructor called" << endl;
+//         }
+
+//         void brew() const override{
+//             cout<<"Brewing"<<teaName<< " by steeping green tea leaves"<<endl;
+//         }
+//         // void serve() const override{
+//         //     cout <<"serving"<<servings <<" cups of tea" <<endl;
+//         // }
+//                     //destructor
+//         ~GreenTea(){
+//             cout<<"Destructor called"<<endl;
+//         }
+
+// };
+
+
+// class MasalaTea : public Tea{
+//     public:
+//         MasalaTea(int serve):Tea("Masala Tea",serve) {
+//             cout << "Masala Tea deligating constructor called" << endl;
+//         }
+//         // final keyword cant inherit from masala tea can inherit from tea but this is final 
+//         void brew() const override final{
+//              cout<<"Brewing"<<teaName<< " with spices and milk"<<endl;
+//         }
+
+//         void serve() const override{
+//             cout <<"serving"<<servings <<" cups of masala tea " <<endl;
+//         }
+
+//         ~MasalaTea(){
+//             cout<<"destructor called"<<endl;
+//         }
+// };
+//                 //inherit from masala class but brew cant override bcz of final
 
 
 
-};
+// // class SpicyTea: public MasalaTea{
+// //     public:
+// //                 // cant overrride 
+// //         // void brew() const override{
+// //         //      cout<<"Brewing"<<teaName<< " with spices and milk"<<endl;
+// //         // }
+// //                 // can override no final written in masala serve method
+// //         void serve() const override{
+// //             cout <<"serving"<<servings <<" cups of tea" <<endl;
+// //         }
+// // };
+
+
+
+
+
+// int main(){
+
+//     Tea* tea1 = new GreenTea(4);
+//     Tea* tea2 = new MasalaTea(6);
+
+//     tea1->brew();
+//     tea1->serve();
+
+//     tea2->brew();
+//     tea2->serve();
+
+//     delete tea1;
+//     delete tea2;
+
+//     return 0;
+// }
