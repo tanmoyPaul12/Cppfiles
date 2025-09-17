@@ -362,7 +362,7 @@ int main(){
 }
 
                                         // arrays
-
+                                          // array always goes pass by reference
 
 
 
